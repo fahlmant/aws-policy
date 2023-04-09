@@ -73,7 +73,7 @@ func (statementJSON *Statement) Parse(statement map[string]interface{}) {
 	for statementKey, statementValue := range statement {
 		// Switch case over key type (identifying Statement elements)
 		switch statementKey {
-		case "StatementID":
+		case "Sid":
 			// Type assertion to assign
 			statementJSON.StatementID = statementValue.(string)
 		case "Effect":
